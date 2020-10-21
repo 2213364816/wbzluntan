@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/main.js"></script>
+    <style>
+        body
+        {
+            background-image: url('picture/background.jpg');
+        }
+        /* 设置欢迎字体的样式 */
+        #welcome{
+        text-align: center;
+        color: blanchedalmond;
+        font-size: xx-large;
+        margin-top: 150px;
+        }
+        /* 设置用户名和邮箱框的样式 */
+        input[type=text], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        /* 设置密码框的样式 */
+        input[type=password], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        /* 设计按钮的样式 */
+        input[type=button] {
+        width: 20%;
+        background-color:darkgray;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 50px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div id="welcome">
+        欢迎您<span id="curname"></span>,感谢我们的相遇！！！
+    </div><br><br>
+    <ul>
+        <li><a class="active" >个人中心</a></li>
+        <!-- <li><a href="/wbzluntan/myinf.html">个人资料</a></li>
+        <li><input type="button" value="资料" id="myinfbtn"></li> -->
+        <li><a href="/wbzluntan/myinf.html" id=myinfbtn>个人资料</a></li>
+        <li><a href="/wbzluntan/mainf.html" >账号注销</a></li>
+        
+        
+    </ul>
+    <!-- <input type="button" value="个人资料" id="myinfbtn"> -->
+    </center>
+    <!-- <input type="button" value="个人资料" id="myinfbtn">
+    <input type="button" value="注销" id="exitbtn"> -->
+</body>
+</html>

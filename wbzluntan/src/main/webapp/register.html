@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/register.js"></script>
+    <style>
+        body
+        {
+            background-image: url('picture/background.jpg');
+        }
+        /* 设置欢迎字体的样式 */
+        #welcome{
+        text-align: center;
+        color: blanchedalmond;
+        font-size: xx-large;
+        margin-top: 150px;
+        }
+        /* 设置用户名和邮箱框的样式 */
+        input[type=text], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        /* 设置密码框的样式 */
+        input[type=password], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        /* 设计按钮的样式 */
+        input[type=button] {
+        width: 20%;
+        background-color:darkgray;
+        color: white;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+        #showlock{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        欢迎来到注册界面！
+    </div>
+    <center>
+        <input type="text" name="username" id="username" placeholder="请输入用户名"><span id="msg"></span>
+        <br>
+        <input type="text" name="email" id="email" placeholder="请输入邮箱"><span id="emsg"></span><span id="rmsg"></span>
+        <br>
+        <input type="password" minlength="2" maxlength="16" name="userpwd" id="userpwd" placeholder="请输入密码">
+        <input type="hidden" value="1" id="islock"><br>
+        <input type="password" id="conpwd" placeholder="请确认密码">
+        <br>
+        <span id="showlock">大写锁定已打开</span>
+        <br>
+        <input type="button" value="注册" id="regBtn">
+    </center>
+    
+</body>
+</html>

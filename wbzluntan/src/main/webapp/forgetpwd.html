@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/forgetpwd.js"></script>
+    <style>
+        body
+        {
+            background-image: url('picture/background.jpg');
+        }
+        /* 设计欢迎字体的样式 */
+        #welcome{
+        text-align: center;
+        color: blanchedalmond;
+        font-size: xx-large;
+        margin-top: 150px;
+        }
+        /* 设置用户名和邮箱框的样式 */
+        input[type=text], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        /* 设置密码框样式 */
+        input[type=password], select {
+        width: 20%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+        /* 设计按钮的样式 */
+        input[type=button] {
+        width: 10%;
+        background-color:darkgray;
+        color: black;
+        padding: 10px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin: 0px auto;
+        }
+        #searchBtn{
+            display: none;
+        }
+        #pagectrl{
+            font-size: 0.4cm;
+            text-align: center;
+            display: none;
+        }       
+        #resultdiv{
+            margin-top: 20px; 
+            display: none;
+        }
+</style>
+</head>
+<body>
+    <div id="welcome">
+        忘记密码
+    </div>
+    <!-- <center>
+        <div id="welcome">
+            身份验证
+        </div>
+        <input type="hidden" name="pageNum" value="1" id="pageNum">
+        <input type="hidden" name="pageSize" value="3" id="pageSize">
+    
+        <div>
+            <input type="text" name="username" id="username" placeholder="请输入用户名">
+            <br>
+            <input type="text" name="email" id="email" placeholder="请输入邮箱">
+        </div><br>
+        <div>
+            <input type="button" value="下一步" id="searchBtnShow">
+            <input type="button" value="隐藏下一步" id="searchBtn">
+        </div>
+        <div id="resultdiv">
+            <table id="reinputsulttable">
+                <tr>
+                    <th>用户编号</th>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>密码</th>
+                </tr>
+            </table>
+        </div>
+        <div id="pagectrl">
+            共<span id="total"></span>条&nbsp;&nbsp;
+            共<span id="pages"></span>页&nbsp;&nbsp;
+            第<span id="curpage"></span>页
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="javascript:void(0)" id="prePage">上一页</a><span id="prePageSpan">上一页</span>
+            <input type="range" value="1" min="1" id="goRange"><input type="gopage" readonly id="gopage" min="1"><a href="javascript:void(0)" id="goBtn">GO</a>
+            <a href="javascript:void(0)" id="nextPage">下一页</a><span id="nextPageSpan">下一页</span>
+        </div>
+    </center> -->
+    <center>
+    <input type="text" name="username" id="username" placeholder="请输入已有用户名"><span id="msg"></span>
+    <br>
+    <input type="text" name="email" id="email" placeholder="请输入您绑定的邮箱"><span id="emsg"></span><span id="rmsg"></span>
+    <br>
+    <input type="password" minlength="2" maxlength="16" name="userpwd" id="userpwd" placeholder="请输入忘记密码修改密码">
+    <br>
+    <input type="button" value="忘记密码修改" id="regBtn">
+
+    </center>
+    
+    
+</body>
+</html>

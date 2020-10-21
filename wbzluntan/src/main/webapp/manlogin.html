@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="script/manlogin.js"></script>
+<style>
+    body
+    {
+        background-image: url('picture/background.jpg');
+    }
+    /* 设计欢迎字体的样式 */
+    #welcome{
+    text-align: center;
+    color: blanchedalmond;
+    font-size: xx-large;
+    margin-top: 150px;
+    }
+    /* 设置用户名和邮箱框的样式 */
+    input[type=text], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    /* 设置密码框的样式 */
+    input[type=password], select {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    /* 设计按钮的样式 */
+    input[type=button] {
+    width: 10%;
+    background-color:darkgray;
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px auto;
+    }
+    #showlock{
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <div id="welcome">
+        尊敬的管理员，请登录！
+    </div>
+    <div>
+
+        <center>
+            <input type="hidden" value="1" id="islock">
+        <input type="text" name="username" id="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="email" id="email" placeholder="请输入邮箱">
+        <br>
+        &nbsp;&nbsp;&nbsp;
+        <input type="password" name="userpwd" id="userpwd" placeholder="请输入密码">
+        <input type="checkbox" name="show" id="show">
+        <br>
+        <span id="showlock">大写锁定已打开</span>
+        <br>
+        <!-- <input type="button" value="注册" id="regbtn"> -->
+        <input type="button" value="管理员登录" id="btn">
+        <br><br>
+        <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="forgetpwd.html">忘记密码？</a> -->
+        </center>
+        
+    </div>   
+</body>
+</html>

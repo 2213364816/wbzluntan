@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人信息页</title>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/myinf.js"></script>
+    <style>
+        body {
+            background-image: url('picture/background.jpg');
+        }
+        /* 设置欢迎字体的样式 */
+        
+        #welcome {
+            text-align: center;
+            color: blanchedalmond;
+            font-size: xx-large;
+            margin-top: 150px;
+        }
+        /* 设置用户名和邮箱框的样式 */
+        
+        input[type=text],
+        select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* 设置密码框的样式 */
+        
+        input[type=password],
+        select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* 设计按钮的样式 */
+        
+        input[type=button] {
+            width: 20%;
+            background-color: darkgray;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #personnews {
+        border: 1px black solid;
+        margin: 0px auto;
+        border-collapse: collapse;
+        }
+
+        #personnews th,
+        #personnews td {
+            border: 1px black solid;
+        }
+
+        #personnews th {
+            background-color: rgb(12, 7, 49);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="welcome">
+        个人中心
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="resultdiv">
+        <center>
+            <table id="personnews" width="1000px" height="176px">
+
+                <tr>
+                    <th>用户名称</th>
+                    <th>邮箱</th>
+                    <th>密码</th>
+                    <!-- <th>操作</th> -->
+                </tr>
+            </table>
+        </center>
+    </div>
+
+    <div>
+        <center>
+            <input type="button" value="修改密码" id="changepwdbtn">
+        </center>
+    </div>
+    <div>
+        <center>
+            <input type="button" value="登录时间查询" id="logintmjbtn">
+        </center>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/mainf.js"></script>
+    <style>
+        body {
+            background-image: url('picture/background.jpg');
+        }
+        /* 设置欢迎字体的样式 */
+        
+        #welcome {
+            text-align: center;
+            color: blanchedalmond;
+            font-size: xx-large;
+            margin-top: 150px;
+        }
+        /* 设置用户名和邮箱框的样式 */
+        
+        input[type=text],
+        select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* 设置密码框的样式 */
+        
+        input[type=password],
+        select {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* 设计按钮的样式 */
+        
+        input[type=button] {
+            width: 20%;
+            background-color: darkgray;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id="welcome">
+        游客，欢迎您！请登录！
+
+        <input type="button" value="登录" id="jumpbtn">
+    </div>
+</body>
+
+</html>
