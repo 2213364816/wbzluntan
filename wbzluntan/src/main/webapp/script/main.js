@@ -33,7 +33,10 @@ $(function() {
         var mydate = new Date();
         var str = "" + mydate.getFullYear() + "-";
         str += (mydate.getMonth() + 1) + "-";
-        str += mydate.getDate();
+        str += mydate.getDate()+" ";
+        str += mydate.getHours()+":";
+        str += mydate.getMinutes()+":";
+        str += mydate.getSeconds();
         var username = $("#curid").val();
         $.post("/wbzluntan/addtm", "username=" + username + "&logintm=" + str),
             function(data) {
