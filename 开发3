@@ -1,0 +1,30 @@
+//	登录
+	public Userinfo checkLogin(Userinfo user) {
+		UserinfoExample example = new UserinfoExample();
+		Criteria cc = example.createCriteria();
+//		添加用户名条件
+		cc.andUsernameEqualTo(user.getUsername());
+//		添加邮箱条件
+		cc.andEmailEqualTo(user.getEmail());
+//		添加密码条件
+		cc.andUserpwdEqualTo(user.getUserpwd());
+//		查询
+		List<Userinfo> list = userMapper.selectByExample(example);
+//		判断登录成功与否
+		if(list.size() > 0) {
+//			登录成功 返回用户详细信息
+			return  list.get(0);
+		}
+		
+		else {
+//			登录失败
+			return null;
+		}
+	}
+//注册2
+	public boolean addUser(Userinfo user) {
+		userMapper.insert(user);
+		return true;
+	}
+	
+	
